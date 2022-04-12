@@ -22,5 +22,5 @@ resource sa 'Microsoft.Storage/storageAccounts@2021-04-01' = {
 }
 
 resource fileShare 'Microsoft.Storage/storageAccounts/fileServices/shares@2021-04-01' = {
-  name: '${sa.name}/default/${fileShareName}'
+  name: '${sa.name}/default/${fileShareName}' 
 }
